@@ -6,8 +6,8 @@ Service Worker to compile Svelte Files
 
 There are examples located in the following folders:
 
-- [Simple counter component](docs/hello-world)
-- [Two components importing each other](docs/alpha-beta)
+- [Simple counter component](https://svelte-worker.surge.sh/hello-world)
+- [Two components importing each other](https://svelte-worker.surge.sh/alpha-beta)
 
 ## How to use
 
