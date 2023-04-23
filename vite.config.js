@@ -3,11 +3,12 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   build: {
-    emptyOutDir: true,
+    outDir: "docs",
+    emptyOutDir: false,
     lib: {
-      entry: resolve(__dirname, "src/compiler.js"),
-      name: "Svelte Compiler",
-      fileName: "compiler",
+      entry: resolve(__dirname, "src/svelte-worker.js"),
+      name: "Svelte Worker",
+      fileName: "svelte-worker",
     },
   },
 });

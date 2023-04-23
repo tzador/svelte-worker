@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "http-serve -c-1 -p 7878 docs",
+    "build": "vite build && rm docs/*.umd.cjs"
   },
   "devDependencies": {
+    "http-serve": "^1.0.1",
     "vite": "^4.2.0"
   },
   "dependencies": {
