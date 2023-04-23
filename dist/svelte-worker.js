@@ -32448,7 +32448,7 @@ else {
       sveltePath: "/svelte"
     }).js.code.replace(
       /\/svelte\/internal/g,
-      "/svelte-internal-index.mjs"
+      "https://svelte-worker.surge.sh/svelte-internal-index.js"
     ), s = new Headers(r.headers);
     return s.set("content-type", "application/javascript"), new Response(a, {
       status: r.status,

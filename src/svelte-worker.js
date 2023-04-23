@@ -30,7 +30,7 @@ if (typeof window !== "undefined") {
     });
     const js = result.js.code.replace(
       /\/svelte\/internal/g,
-      "/svelte-internal-index.mjs"
+      "https://svelte-worker.surge.sh/svelte-internal-index.js"
     );
 
     const headers = new Headers(response.headers);

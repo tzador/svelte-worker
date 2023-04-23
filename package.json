@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "http-serve -c-1 -p 7878 docs",
-    "build": "vite build && rm docs/*.umd.cjs"
+    "dev": "http-serve -c-1 -p 7878 dist",
+    "build": "vite build && rm dist/*.umd.cjs",
+    "deploy": "yarn build && surge dist svelte-worker.surge.sh"
   },
   "devDependencies": {
     "http-serve": "^1.0.1",
